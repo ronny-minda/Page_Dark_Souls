@@ -1,0 +1,124 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+$fondo: #0e1318;
+$local: #212529;
+$local1: #252f38;
+$titulo: #b5c4d1;
+$parrafo: #7f91a0;
+
+body {
+    background-color: $fondo !important;
+    header {
+        box-shadow: -0px 23px 100px 50px rgba(0,0,0,0.75);
+    }
+    #carouselExampleCaptions {
+        border: 10px solid transparent;
+
+        border-image: url("../img/unnamed.png") 30 stretch;
+    }
+    article {
+        color: $parrafo;
+    }
+    h2 h1 h3 {
+        color: $titulo;
+    }
+
+    main {
+        .accordion {
+            .accordion-item {
+                background-color: $local;
+                button {
+                    color: $titulo;
+                    background-color: $local1;
+                    &::after {
+                        border-radius: 50%;
+                        background-color: #28335a;
+                    }
+                }
+                
+            }
+
+        }
+        .accordion-body {
+            
+            display: flex;
+            align-items: center;
+
+
+            p {
+                color: $parrafo;
+            }
+            img {
+                width: 500px;
+                
+            }
+        }
+        @media (max-width: 768px) {
+            .accordion-body {
+            
+                display: flex;
+                flex-direction: column;
+    
+    
+                p {
+                    color: $parrafo;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .card-group {
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        margin-bottom: 30px;
+        h5 {
+            color: $titulo;
+        }
+
+        p {
+            color: $parrafo;
+        }
+        
+        .card {
+            background-color: $local;
+        }
+
+    }
+
+    footer {
+        background-color: $local;
+        box-shadow: -0px -23px 100px 50px rgba(0,0,0,0.75);
+    }
+}
+
