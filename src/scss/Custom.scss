@@ -38,6 +38,7 @@ $parrafo: #7f91a0;
 body {
     background-color: $fondo !important;
     header {
+        margin-bottom: 25px;
         box-shadow: -0px 23px 100px 50px rgba(0,0,0,0.75);
     }
     #carouselExampleCaptions {
@@ -53,6 +54,11 @@ body {
     }
 
     main {
+
+        .Progra {
+            margin-bottom: 30px;
+        }
+
         .accordion {
             .accordion-item {
                 background-color: $local;
@@ -95,6 +101,18 @@ body {
                 img {
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    .stage {
+        img {
+            width: 500px;
+            margin: 20px 0;
+        }
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
             }
         }
     }

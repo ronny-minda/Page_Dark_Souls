@@ -1,31 +1,83 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { Link } from "react-router-dom";
 
 import logo from '../img/logo.png'
 
+
+
 function Header() {
+
+    const [estado, setEstado] = useState({
+        home: 'nav-link active',
+        bosses: 'nav-link',
+        escenario: 'nav-link',
+        programador: 'nav-link'
+    })
+
+    function Home() {
+        console.log(estado.home);
+        setEstado ({
+            home: 'nav-link active',
+            bosses: 'nav-link',
+            escenario: 'nav-link',
+            programador: 'nav-link'
+        })
+    }
+
+    function Bosses() {
+        console.log('Bosses!');
+        setEstado ({
+            home: 'nav-link',
+            bosses: 'nav-link active',
+            escenario: 'nav-link',
+            programador: 'nav-link'
+        })
+    }
+
+    function Stage() {
+        console.log('Stage!');
+        setEstado ({
+            home: 'nav-link',
+            bosses: 'nav-link',
+            escenario: 'nav-link active',
+            programador: 'nav-link'
+        })
+    }
+
+    function Programador() {
+        console.log('Programador!');
+        setEstado ({
+            home: 'nav-link',
+            bosses: 'nav-link',
+            escenario: 'nav-link',
+            programador: 'nav-link active'
+        })
+    }
+
   return (
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid container">
-                <a class="navbar-brand mt-3 mb-3" href="#">
-                    <img src={logo} alt="" width="180" height="30"></img>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container-fluid container">
+                <Link className="navbar-brand mt-3 mb-3" to="/Home">
+                    <img src={logo} alt="Logo" width="200" height="30"></img>
+                </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item" onClick={Home}>
+                            <Link className={ estado.home } aria-current="page" to="/Home">Home</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bosses</a>
+                        <li className="nav-item" onClick={Bosses}>
+                            <Link className={ estado.bosses } to="/Bosses">Bosses</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Escenarios</a>
+                        <li className="nav-item" onClick={Stage}>
+                            <Link className={ estado.escenario } to="/Stage">Escenarios</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <li className="nav-item" onClick={Programador}>
+                            <Link className={ estado.programador } to="/Programador" >Programador</Link>
                         </li>
                     </ul>
                 </div>
