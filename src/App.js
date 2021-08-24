@@ -22,7 +22,7 @@ function App() {
 
      
 
-      <Route exact path={"/Page_Dark_Souls/Home" || "/Page_Dark_Souls"}>
+      <Route exact path={"/Page_Dark_Souls/Home" || "/Page_Dark_Souls/"}>
         <MainHome/>
       </Route>
 
