@@ -22,23 +22,19 @@ function App() {
 
      
 
-      <Route exact path={"/Home" || "/"}>
+      <Route exact path={"/Page_Dark_Souls/Home" || "/Page_Dark_Souls"}>
         <MainHome/>
       </Route>
 
-      <Route exact path="/">
-        <MainHome/>
-      </Route>
-
-      <Route exact path="/Bosses">
+      <Route exact path="/Page_Dark_Souls/Bosses">
         <MainBosses/>
       </Route>
 
-      <Route exact path="/Stage">
+      <Route exact path="/Page_Dark_Souls/Stage">
         <Mainstage/>
       </Route>
 
-      <Route exact path="/Programador">
+      <Route exact path="/Page_Dark_Souls/Programador">
         <Programador/>
       </Route>
 
