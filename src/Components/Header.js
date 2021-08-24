@@ -68,16 +68,16 @@ function Header() {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item" onClick={Home}>
-                            <Link className={ estado.home } aria-current="page" to="/Home">Home</Link>
+                            <Link className={ estado.home } aria-current="page" to="/Page_Dark_Souls/Home">Home</Link>
                         </li>
                         <li className="nav-item" onClick={Bosses}>
-                            <Link className={ estado.bosses } to="/Bosses">Bosses</Link>
+                            <Link className={ estado.bosses } to="/Page_Dark_Souls/Bosses">Bosses</Link>
                         </li>
                         <li className="nav-item" onClick={Stage}>
-                            <Link className={ estado.escenario } to="/Stage">Escenarios</Link>
+                            <Link className={ estado.escenario } to="/Page_Dark_Souls/Stage">Escenarios</Link>
                         </li>
                         <li className="nav-item" onClick={Programador}>
-                            <Link className={ estado.programador } to="/Programador" >Programador</Link>
+                            <Link className={ estado.programador } to="/Page_Dark_Souls/Programador" >Programador</Link>
                         </li>
                     </ul>
                 </div>
