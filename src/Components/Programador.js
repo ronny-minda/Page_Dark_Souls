@@ -7,7 +7,7 @@ function Programador() {
     <main className="container">
         <div className="bg-dark text-secondary px-4 py-5 text-center Progra">
             <div className="py-5">
-                <h1 className="display-5 fw-bold text-white">Creador de esta pagina</h1>
+                <h1 className="display-5 fw-bold text-white">Un Poquito Sobre Mi</h1>
                 <div className="col-lg-6 mx-auto">
                     <p className="fs-5 mb-4">Esta pagina esta creada con <b>Bootstrap</b> y <b>React</b> con la tematica del videojuego Dark Souls(extremadamente bueno este videojuego).<br></br>Bueno un poco sobre los proyectos que he hecho o en los que estoy actualmente y si tienes GitHub dame una estrellita 😁</p>
                     <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">

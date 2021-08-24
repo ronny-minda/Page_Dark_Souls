@@ -89,3 +89,9 @@ function Header() {
 }
 
 export default Header;
+
+// git add .
+// git commit -m "listo"
+// git push -u origin master
+// npm run predeploy
+// npm run deploy

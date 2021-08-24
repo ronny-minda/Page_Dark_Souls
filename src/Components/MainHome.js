@@ -22,24 +22,15 @@ function Home() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src={ artorias }className="d-block w-100" alt="img_pru"></img>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+
           </div>
           <div className="carousel-item">
             <img src={ prota } className="d-block w-100" alt="img_pru"></img>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+
           </div>
           <div className="carousel-item">
             <img src={ prota1 }className="d-block w-100" alt="img_pru"></img>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -97,7 +88,7 @@ function Home() {
           <img src={ manus } className="card-img-top" alt="img_pru"></img>
           <div className="card-body">
             <h5 className="card-title">Manus(muy divertido este jefe)</h5>
-            <p className="card-text">Manus fue humano alguna vez; se convirtió en el Padre del Abismo cuando su humanidad enloqueció.</p>
+            <p className="card-text">Manus, el padre del Abismo, es el origen del mal que ha acabado con Oolacile. Además, la influencia de la oscuridad insondable se ha extendido por el mundo entero. En el futuro dará lugar a una lucha interminable, tanto contra una reina corrompida como entre los Vigilantes del Abismo y la propia entidad que luchan, pero por ahora, sólo nos interesa saber cómo acabar con él.. aunque sea temopralmente.</p>
           </div>
 
         </div>
